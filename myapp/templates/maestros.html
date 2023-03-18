@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{%block content%}
+{%from "_macros.html" import render_field%}
+<div class="container" id="ma">
+    <div class="row">
+        <main>
+    <section id="section2">
+        <h3>Registro de Maestros</h3>
+        <form name="sent2" action="/maestros" id="from1" method="POST">
+            <div class="row control-group">
+                <div class="from-group col-xs-12 float-label-from-group controls">
+                    {{render_field(form.nombreM,class='form-control')}}
+                </div>
+            </div>
+            <div class="row control-group">
+                <div class="form-group col-xs-12 float-label-from-group controls">
+                    {{render_field(form.apellidosM,class='form-control')}}
+                </div>
+            </div>
+            <div class="row control-group">
+                <div class="form-group col-xs-12 float-label-from-group controls">
+                    {{render_field(form.emailM,class='form-control')}}
+                </div>
+            </div>
+            <input type="hidden" name="csrf_token" value="{{csrf_token()}}">
+            <input type="submit" id="reg-maes" name="registrar" value="Registrar">
+        </form>
+    </section>
+    </main>
+    </div>
+</div>
+{%endblock%}
+

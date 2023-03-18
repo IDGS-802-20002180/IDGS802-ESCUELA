@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+{%block content%}
+{%from "_macros.html" import render_field%}
+<div class="container" id="cm">
+    <div class="row">
+        
+        <main>
+            <section id="sectionMM">
+                <h1>Eliminar</h1>
+        <form name="eliminarM" action="/eliminarM" id="from1" method="POST">
+            <div class="row control-group">
+                <div class="from-group col-xs-12 float-label-from-group controls">
+                    {{render_field(form.idM,class='form-control')}}
+                </div>
+            </div>
+
+            <div class="row control-group">
+                <div class="from-group col-xs-12 float-label-from-group controls">
+                    {{render_field(form.nombreM,class='form-control')}}
+                </div>
+            </div>
+            <div class="row control-group">
+                <div class="form-group col-xs-12 float-label-from-group controls">
+                    {{render_field(form.apellidosM,class='form-control')}}
+                </div>
+            </div>
+            <div class="row control-group">
+                <div class="form-group col-xs-12 float-label-from-group controls">
+                    {{render_field(form.emailM,class='form-control')}}
+                </div>
+            </div>
+            <input type="hidden" name="csrf_token" value="{{csrf_token()}}">
+            <input type="submit"  class="btn btn-danger" id="eliminar" name="eliminar" value="Eliminar">
+            <a href="ABCompleto2" class="btn btn-success"><i class="icon-action-undo icon-white"></i> Cancelar </a>
+        </form>
+    </section>
+    </main>
+    </div>
+</div>
+{%endblock%}
+

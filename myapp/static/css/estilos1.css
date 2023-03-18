@@ -1,0 +1,159 @@
+#ind {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Opcional: para centrar verticalmente */
+}
+
+#ma {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Opcional: para centrar verticalmente */
+}
+
+#section1 {
+    width: 100%; /* Opcional: ajusta el ancho de la sección */
+    color: white; /* Color del texto */
+  text-shadow: 2px 2px 4px black; /* Sombra del texto */
+  padding: 50px; /* Espacio interno alrededor del contenido */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Sombra alrededor del section */
+  text-align: center;
+}
+
+
+
+#section2 {
+    width: 100%; /* Opcional: ajusta el ancho de la sección */
+    color: white; /* Color del texto */
+  text-shadow: 2px 2px 4px black; /* Sombra del texto */
+  padding: 50px; /* Espacio interno alrededor del contenido */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Sombra alrededor del section */
+  text-align: center;
+}
+
+
+#cm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Opcional: para centrar verticalmente */
+    
+}
+
+#indexC {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Opcional: para centrar verticalmente */
+    text-align: center;
+}
+
+h2{
+  position: fixed; /* Posición absoluta para que el h2 esté dentro del contenedor */
+  top: 50%; /* Posicionamiento vertical del h2 */
+  left: 50%; /* Posicionamiento horizontal del h2 */
+  transform: translate(-50%, -50%); /* Centrar el h2 */
+  color: white; /* Color del texto */
+  text-shadow: 2px 2px 4px black; /* Sombra del texto */
+  -webkit-text-stroke: 1px transparent; /* Contorno transparente de 1px */
+  font-size: 3em; /* Tamaño del texto */
+  font-weight: bold; /* Grosor del texto */
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+#bdy{
+    background-image: url('../img/utl3.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Altura del contenedor igual a la altura de la ventana del navegador */
+    position: relative; /* Posición relativa para que los elementos absolutos estén dentro del contenedor */
+}
+
+#sectionMM {
+    width: 100%; /* Opcional: ajusta el ancho de la sección */
+    color: white; /* Color del texto */
+    text-shadow: 2px 2px 4px black; /* Sombra del texto */
+    padding: 50px; /* Espacio interno alrededor del contenido */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Sombra alrededor del section */
+
+}
+#htres{
+  color: white; /* Color del texto */
+    text-shadow: 2px 2px 4px black; /* Sombra del texto */
+}
+
+table {
+    border-collapse: collapse; /* fusiona las bordes de la tabla */
+    width: 100%; /* ancho total de la tabla */
+    margin-bottom: 20px; /* margen inferior */
+  }
+  
+  th {
+    background-color: #333; /* color de fondo del encabezado */
+    color: white; /* color del texto del encabezado */
+    padding: 10px; /* espaciado interno */
+  }
+  
+  td {
+    border: 1px solid #333; /* borde de las celdas */
+    padding: 10px; /* espaciado interno */
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2; /* color de fondo de las filas pares */
+  }
+  
+  /* estilo para la primera columna */
+  td:first-child {
+    font-weight: bold; /* texto en negrita */
+    background-color: #eee; /* color de fondo */
+    width: 150px; /* ancho de la columna */
+  }
+  
+  /* estilo para la última columna */
+  td:last-child {
+    text-align: right; /* alineación del texto a la derecha */
+  }
+
+  .moving-header {
+    animation: move-header 2s ease-in-out infinite;
+  }
+  
+  @keyframes move-header {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(20px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  #reg-alum {
+    background-color: orangered;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  #reg-maes {
+    background-color: orangered;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  #reg-maes:hover{
+    background-color: red;
+  }
+
+  #reg-alum:hover{
+    background-color: red;
+  }

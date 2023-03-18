@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/estilos1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-VZbIf0AFtbVKJTbHYanPFOn8W7OWd5vqbMxVCjJkREvv8UpNcquwvGmHtBslzYWgopEs7Rvz/UkQVxXYjrZL3A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<style>
+    body {
+        padding-top: 60px;
+
+    }
+
+    .tr-head {
+        background: #dff0d8;
+    }
+</style>
+<link rel="stylesheet" href="../static/bootstrap/css/bootstrap-responsive.min.css">
+
+<body id="bdy">
+    <div class="navbar navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="brand" href="{{ url_for('index') }}">
+                    UTL-IDGS802 
+                </a>
+                <a href="{{ url_for('alumnos.alumnosGet') }}">
+                    <i class="icon-user icon-white"></i>
+                    Alumnos
+                </a>
+                <a href="{{ url_for('maestros.maestros_post') }}">
+                    <i class="icon-user icon-white"></i>
+                    Maestros
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <div class="container">
+        {%with messages=get_flashed_messages() %}
+        {%if messages%}
+        
+        {%for message in messages%}
+        <div class="alert alert-succes">
+            {{message}}
+        </div>
+        {%endfor%}
+        
+        {%endif%}
+        {%endwith %}
+
+        {%block content%}
+        
+        {%endblock%}
+    </div>
+
+</body>
+
+</html>
